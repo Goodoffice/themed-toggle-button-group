@@ -210,7 +210,7 @@ class ThemedToggleButtonGroup : FlexboxLayout {
     private fun getSelectionAnimator(btn: ThemedButton, x: Float, y: Float, selected: Boolean): Animator =
         when (selectAnimation) {
             NONE -> AnimationUtils.createFadeAnimator(btn.cvSelectedCard, selected, 0L)
-            FADE -> AnimationUtils.createFadeAnimator(btn.cvSelectedCard, selected, 400L)
+            FADE -> AnimationUtils.createFadeAnimator(btn.cvSelectedCard, selected, 800L)
             VERTICAL_SLIDE -> AnimationUtils.createVericalSlideAnimator(btn.cvCard, btn.cvSelectedCard, selected)
             HORIZONTAL_SLIDE -> AnimationUtils.createHorizontalSlideAnimator(btn.cvCard, btn.cvSelectedCard, selected)
             HORIZONTAL_WINDOW -> AnimationUtils.createHorizontalWindowAnimator(btn.cvCard, btn.cvSelectedCard, selected)
